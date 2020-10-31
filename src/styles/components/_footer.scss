@@ -1,0 +1,68 @@
+/**
+* @file _footer.scss
+**/
+
+.footer {
+  width: 100%;
+  height: 200px;
+  padding: 20px 0;
+  background-color: #4D4D4D;
+
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+  }
+
+  &__title{
+    padding: 40px 0;
+    margin-right: 120px;
+    font-size: 4rem;
+    color: #fefefe;
+    text-align: center;
+  }
+  &__content{
+    margin-bottom: 40px;
+    .twitter{
+      display: inline-block;
+      padding-left: 57px;
+      margin-bottom: 40px;
+      font-size: 1.6rem;
+      color: #fefefe;
+
+      a{
+        color: #fefefe;
+      }
+    }
+  }
+
+  &__nav{
+    .menu{
+      display: flex;
+      justify-content: space-between;
+
+      .menu-item {
+        width: 160px;
+        text-align: center;
+  
+        &:last-child{
+          margin-right: 0;
+        }
+  
+        a {
+          font-size: 1.6rem;
+          color: #fefefe;
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  p{
+    text-align: center;
+    color: #fefefe;
+
+  }
+}

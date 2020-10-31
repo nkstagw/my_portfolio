@@ -1,0 +1,232 @@
+/**
+* @file _l-index.scss
+**/
+
+main{
+// 共通部分
+  [class$="__wrapper"]{
+    width: 100%;
+    height: 800px;
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+
+  [class$="__inner"]{
+    display: flex;
+    width: 95%;
+    margin: 0 auto; 
+  }
+
+  [class$="__content"]{
+    position: relative;
+    width: 40%;
+    height: 600px;
+    color: $TEXT_COLOR_CONTENT;
+    
+    h2{
+      font-size: 12rem;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 80px;
+
+      &::first-letter{
+        color: #7c0000;
+      }
+    }
+
+    h3{
+      font-size: 6rem;
+      font-weight: normal;
+      padding-left: 40px;
+
+    }
+    p{
+      font-size: 3.2rem;
+      padding-left: 80px;
+    }
+    a{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 320px;
+      height: 80px;
+      line-height: 80px;
+      border-radius: 40px;
+      color: #707070;
+      background-color: $TEXT_COLOR_CONTENT ;
+      font-size: 4rem;
+      text-align: center;
+      transition: 0.5s;
+
+      &:hover{
+        color: $TEXT_COLOR_CONTENT ;
+        background-color:  #707070;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  [class$="__image"]{
+    display: block;
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: 1s all;
+
+      &:hover{
+        transform: scale(1.1,1.1);
+        transition: 1s all;
+        filter: grayscale(20%);
+      }
+    }
+  }
+
+  // profile
+  .profile{
+    margin-bottom: 120px;
+
+    &__wrapper{
+
+    }
+
+    &__content{
+      order: 2;
+
+    }
+
+    &__image{
+      order: 1;
+    }
+  }
+
+  // works
+  .works{
+    margin-bottom: 120px;
+    &__wrapper{
+
+    }
+
+    &__content{
+      margin-right: 40px;
+    }
+
+    &__image{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 1000px;
+      height: 600px;
+      
+        .image-item{
+        width: 480px;
+        height: 280px;
+        margin-bottom: 40px;
+        overflow: hidden;
+
+        img{
+          width: 100%;
+          height: auto;
+
+        }
+      }
+    }
+  }
+
+  // contact
+  .contact{
+    margin-bottom: 160px;
+
+    &__wrapper{
+
+    }
+
+    &__content{
+      order: 2;
+    }
+
+    &__image{
+      order: 1;
+    }
+  }
+}
+
+
+
+
+
+
+#main_cover {
+    h2 {
+      position: relative;
+      color: #000;
+      font-size: 5.2rem;
+      font-weight: 300;
+      padding-top: 220px;
+      padding-left: 100px;
+      letter-spacing: 10px;
+      
+      span {
+        display: block;
+        margin-left: 250px;
+        margin-top: 56px;
+      }
+    }
+  
+
+  .point1 {
+    background-color: $MAIN_GREEN;
+    padding: 50px 0;
+
+    .point1-container {
+      max-width: 1330px;
+      padding: 0 15px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      @include MEDIA_SP {
+        flex-direction: column;
+      }
+    }
+
+    .point-text-wrapper {
+      max-width: 660px;
+      width: 50%;
+      background-color: #fff;
+      padding: 3.8%;
+      margin-right: 7.7%;
+      @include MEDIA_SP {
+        width: 100%;
+        margin-right: initial;
+      }
+
+      h3 {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+      }
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+    }
+
+    img {
+      width: 42%;
+      @include MEDIA_SP {
+          max-width: 550px;
+          width: 100%;
+          margin-top: 30px;
+      }
+    }
+  }
+}

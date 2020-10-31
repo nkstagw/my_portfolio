@@ -1,0 +1,56 @@
+/**
+* @file _l-common.scss
+**/
+
+html {
+  font-size: $DEFAULT_FONT_SIZE;
+}
+
+body {
+  color: $DEFAULT_COLOR;
+  font-size: 1.6rem;
+  font-family: $DEFAULT_FONT_FAMILY;
+  @include MEDIA_TAB {
+    font-size: 1.2rem;
+  }
+}
+
+.is_pc {
+  display: block;
+  @include MEDIA_SP {
+    display: none;
+  }
+}
+
+.is_sp {
+  display: none;
+  @include MEDIA_SP {
+    display: block;
+  }
+}
+
+.brpc {
+  display: block;
+  @include MEDIA_SP {
+    display: none;
+  }
+}
+
+.brsp {
+  display: none;
+  @include MEDIA_SP {
+    display: block;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+
+// 下からフェードインする要素に付与するクラス
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s;
+}

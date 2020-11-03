@@ -10,11 +10,16 @@ main{
     background: url(../images/background.jpg) no-repeat;
     background-size: cover;
     background-position:center;
+    @include MEDIA_TAB {
+      height: 1200px;
+    }
   }
 
   [class$="__inner"]{
     display: flex;
-    width: 95%;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
     margin: 0 auto; 
   }
 
@@ -22,10 +27,14 @@ main{
     position: relative;
     width: 40%;
     height: 600px;
+    padding-top: 80px;
     color: $TEXT_COLOR_CONTENT;
+    @include MEDIA_TAB {
+      width: 100%;
+    }
     
     h2{
-      font-size: 12rem;
+      font-size: 10rem;
       font-weight: normal;
       text-align: center;
       margin-bottom: 80px;
@@ -70,9 +79,13 @@ main{
 
   [class$="__image"]{
     display: block;
-    width: 60%;
+    width: 50%;
     height: 600px;
     overflow: hidden;
+    @include MEDIA_TAB {
+      width: 80%;
+      height: 400px;
+    }
 
     img{
       width: 100%;
@@ -88,18 +101,29 @@ main{
       }
     }
   }
+  //first-view
+  .first-view{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    width: 100%;
+    height: 700px;
 
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 40%;
+
+    }
+  }
   // profile
   .profile{
     margin-bottom: 120px;
-
-    &__wrapper{
-
-    }
+    padding-top: 700px;
 
     &__content{
       order: 2;
-
     }
 
     &__image{
@@ -110,30 +134,32 @@ main{
   // works
   .works{
     margin-bottom: 120px;
-    &__wrapper{
-
-    }
 
     &__content{
-      margin-right: 40px;
+      margin-right: 20px;
+      @include MEDIA_TAB {
+        order: 2;
+      }
     }
 
     &__image{
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 1000px;
-      height: 600px;
+      @include MEDIA_TAB {
+        order: 1;
+      }
       
         .image-item{
-        width: 480px;
-        height: 280px;
+        width: calc(100% / 2 - 20px);
+        height: calc(100% / 2 - 20px);
         margin-bottom: 40px;
         overflow: hidden;
 
         img{
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
 
         }
       }

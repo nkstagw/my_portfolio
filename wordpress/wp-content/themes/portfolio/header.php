@@ -10,6 +10,9 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
+  <!-- font awesome CSS -->
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+
   <!-- テーマを認識させるためのCSS 削除厳禁 -->
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/style.css">
 
@@ -38,46 +41,46 @@
   <?php wp_head(); ?>
 </head>
 <body>
-    <header class="header <?php echo attribute_escape( $post->post_name);?>">
-        <div class="header__wrapper">
-        <h1 class="header-title">
-            <a href="/">N's house</a>
-        </h1>
+  <header class="header <?php echo attribute_escape( $post->post_name);?>">
+    <div class="header__wrapper">
+      <h1 class="header-title">
+          <a href="/">N's house</a>
+      </h1>
 
-        <nav class="menu-container-pc">
-            <ul class="menu">
-              <li class="menu-item">
-                  <a href="http://localhost:8000">
-                  <span>Home</span>
-                  <span>ホーム</span>
-                  </a>
-              </li>
-              <li class="menu-item">
-                  <a href="http://localhost:8000/profile/">
-                  <span>Profile</span>
-                  <span>プロフィール</span>
-                  </a>
-              </li>
-              <li class="menu-item">
-                  <a href="http://localhost:8000/works/">
-                  <span>Works</span>
-                  <span>実績</span>
-                  </a>
-              </li>
-              <li class="menu-item">
-                  <a href="http://localhost:8000/contact/">
-                  <span>Contact</span>
-                  <span>お問い合わせ</span>
-                  </a>
-              </li>
-            </ul>
-        </nav>
+      <nav class="menu-container-pc">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="http://localhost:8000">
+            <span>Home</span>
+            <span>ホーム</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000/profile/">
+            <span>Profile</span>
+            <span>プロフィール</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000/works/">
+            <span>Works</span>
+            <span>実績</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000/contact/">
+            <span>Contact</span>
+            <span>お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        <div id="trigger" class="trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div id="trigger" class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
 
     <nav class="menu-container-sp">
@@ -97,4 +100,4 @@
         </ul>
     </nav>
 
-</header>
+  </header>

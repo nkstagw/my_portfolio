@@ -3,24 +3,20 @@
 **/
 
 .header{
-  background-image: url("../images/first-view.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 800px;
   width: 100%;
-  margin-bottom: 160px;
+  height: auto;
 
   &__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    max-width: 100%;
-    padding: 20px 40px ; 
+    width: 90%;
+    margin: 0 auto; 
+    padding: 20px 0;
     background-color:transparent ;
 
     .header-title{
-      font-size: 8rem;
+      font-size: 6rem;
       @include MEDIA_TAB {
         font-size: 4rem;
       }
@@ -136,9 +132,8 @@ nav.menu-container-sp {
 
 // 下層ページのヘッダー用
 @mixin underLayer {
-  background-image: none;
-  height: 160px;
   background-color: #4D4D4D;
+  margin-bottom: 160px;
 }
 .header{
   &.profile{
@@ -164,7 +159,7 @@ nav.menu-container-sp {
           &:nth-of-type(1){
             border: none;
           }
-          &:nth-of-type(3){
+            &:nth-of-type(3){
             border: 1px solid $TEXT_COLOR_HEADER;
           }
         }

@@ -29,14 +29,14 @@ body {
   }
 }
 
-.brpc {
+.br-pc {
   display: block;
   @include MEDIA_SP {
     display: none;
   }
 }
 
-.brsp {
+.br-sp {
   display: none;
   @include MEDIA_SP {
     display: block;

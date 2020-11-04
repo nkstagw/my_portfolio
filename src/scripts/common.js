@@ -28,6 +28,31 @@ $(function () {
       menu_sp.slideUp();
     }
   });
+
+  //スライダー//
+	$('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:4000,
+		speed:8000,
+		easing:'swing',
+    slidesToShow:4,
+    arrows:false,
+		responsive:[
+      {
+				breakpoint:999,
+				settings:{
+					slidesToShow:4,
+				}
+			},
+			{
+				breakpoint:768,
+				settings:{
+					slidesToShow:5,
+					slidesToScroll:1,
+				}
+			}
+		]
+  });
 });
 
 // ボックスを下からフェードイン

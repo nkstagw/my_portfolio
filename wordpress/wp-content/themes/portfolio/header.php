@@ -13,6 +13,10 @@
   <!-- font awesome CSS -->
   <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
 
+  <!-- slick CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
   <!-- テーマを認識させるためのCSS 削除厳禁 -->
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/style.css">
 

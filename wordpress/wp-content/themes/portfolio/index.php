@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
 <main>
-    <section class="first-view">
+    <section class="first-view move">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/first-view.jpg" alt="">
+        <div class="first-view__title">
+            <h2 class="first-view__title-first">shota's</h2>
+            <h2 class="first-view__title-second">portfolio</h2>
+        </div>
     </section>
     
     <section class="profile fade-in-bottom">
@@ -31,7 +35,7 @@
                     <a href="">And more</a>
                 </div>
                 <a href="#" class="works__image">
-                    <div class="image-item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/flogschool.jpg" alt=""></div>
+                    <div class="image-item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/frogschool.jpg" alt=""></div>
                     <div class="image-item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ninjacode.jpg" alt=""></div>
                     <div class="image-item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nowroom.jpg" alt=""></div>
                     <div class="image-item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/airbnb.jpg" alt=""></div>

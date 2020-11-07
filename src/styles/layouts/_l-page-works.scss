@@ -51,22 +51,24 @@
 // main-works
 .main-works{
   margin-bottom: 120px;
+
   &__wrapper{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 90%;
+    width: 80%;
     margin: 0 auto; 
 
   }
   &__card{
     width: calc(100% / 2 - 40px);
-
   }
   &__image{
     display: block;
     width: 100%;
-    height: 80%;
+    height: 70%;
+    margin-bottom: 40px;
+    border: 1px solid #0e0e0e;
 
     img{
       width: 100%;
@@ -75,6 +77,7 @@
     }
   }
   &__title{
+    margin-bottom: 24px;
     text-align: center;
     font-weight: normal;
     font-size: 4rem;
@@ -90,21 +93,30 @@
 .sub-works{
   margin-bottom: 160px;
   &__slider{
-      width: 90%;
+      width: 80%;
       margin: 0 auto; 
   }
 
   .slider{
 
-
     li{
-      padding-right: 40px;
-
-      img{
+      height: 240px;
+      
+      a{
+        display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+      
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 1px solid #0e0e0e;
+        }
       }
     }
   }
+}
+.slick-slide{
+  margin: 0 20px;
 }

@@ -2,6 +2,33 @@
 * @file _l-index.scss
 **/
 
+
+// @keyframes
+@keyframes passing-bar{
+	0% {
+		left: 0;
+		width: 0;
+	}
+	50% {
+		left: 0;
+		width: 100%;
+	}
+	51% {
+		left: 0;
+		width: 100%;
+	}
+	100% {
+		left: 100%;
+		width: 0;
+  }
+}
+
+@keyframes passing-txt{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+
 main{
 // 共通部分
   [class$="__wrapper"]{
@@ -114,7 +141,51 @@ main{
       height: 100%;
       object-fit: cover;
       object-position: 0 40%;
+    }
 
+    &__title{
+      position: relative;
+      top: -70vh;
+      left: 15vw;
+      color: $TEXT_COLOR_CONTENT;
+      font-size: 8rem;
+      font-weight: normal;
+      width: 600px;
+
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background: #000;        
+      }
+      &-first{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      &-second{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &.move .first-view__title::before{
+      animation: passing-bar 4s ease .5s 1 normal forwards;
+    }
+
+    &.move .first-view__title-first{
+      animation: passing-txt 5s ease .5s 1 normal forwards;
+    }
+    &.move .first-view__title-second{
+      animation: passing-txt 6s ease .5s 1 normal forwards;
     }
   }
   // profile

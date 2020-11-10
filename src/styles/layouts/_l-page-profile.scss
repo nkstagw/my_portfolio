@@ -4,7 +4,12 @@
 
 // @keyframes
 @keyframes statusbar{
-
+0%{
+  width: 0;
+}
+100%{
+  width: 100%;
+}
 }
 
 // 共通部分
@@ -191,34 +196,36 @@
 
   }
   &__bar{
-    position: relative;
     width: 100%;
     height: 24px;
     border: 1px solid #0e0e0e;
     border-radius: 24px;
 
-  }
-  &__statusbar{
-    position: absolute;
-    height: 100%;
-    border-radius: 24px;
-    background: linear-gradient(to right, #f56d96, #ffdeb8);
-    animation: statusbar;
-
     &.ninety{
-      width: 90%;
+      padding-right: 10%;
     }
 
     &.eighty{
-      width: 80%;
+      padding-right: 20%;;
     }
 
     &.seventy{
-      width: 70%;
+      padding-right: 30%;;
     }
 
     &.sixty{
-      width: 60%;
+      padding-right: 40%;
+    }
+
+  }
+  &__statusbar{
+    width: 0%;
+    height: 100%;
+    border-radius: 24px;
+    background: linear-gradient(to right, #f56d96, #ffdeb8);
+    
+    &.move{
+    animation: statusbar  3s ease .5s 1 forwards;
     }
   }
 

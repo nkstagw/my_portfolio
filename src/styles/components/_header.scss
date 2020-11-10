@@ -172,6 +172,23 @@ nav.menu-container-sp {
       }
     }
   }
+
+  &.works-detail{
+    @include underLayer();
+    nav.menu-container-pc {
+      .menu {
+        .menu-item {
+          &:nth-of-type(1){
+            border: none;
+          }
+            &:nth-of-type(3){
+            border: 1px solid $TEXT_COLOR_HEADER;
+          }
+        }
+      }
+    }
+  }
+
   &.contact{
     @include underLayer();
     nav.menu-container-pc {

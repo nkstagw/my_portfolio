@@ -33,6 +33,10 @@
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works.css" />
   <?php endif; ?>
 
+  <?php if ( is_page('works-detail') ): ?>
+  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works.css" />
+  <?php endif; ?>
+
   <?php if ( is_page('contact') ): ?>
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/contact.css" />
   <?php endif; ?>
@@ -45,7 +49,14 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <header class="header <?php echo attribute_escape( $post->post_name);?>">
+  <header class="header  
+  <?php 
+    $parent_id = $post->post_parent; 
+    $parent_slug = get_post($parent_id)->post_name; 
+    echo $parent_slug;
+  ?>
+  <?php echo attribute_escape( $post->post_name);?>"
+  >
     <div class="header__wrapper">
       <h1 class="header-title">
           <a href="/">N's house</a>

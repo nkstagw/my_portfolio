@@ -69,3 +69,17 @@ $(function () {
     });
   });
 });
+
+// スクロールされて表示されたらanimationを動かす
+$(function () {
+  $(window).scroll(function () {
+    $('.start_animation').each(function () {
+      var targetElement = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > targetElement - windowHeight + 200) {
+        $('.skill__statusbar').addClass('move');
+      };
+    });
+  });
+});

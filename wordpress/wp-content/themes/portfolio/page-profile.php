@@ -8,7 +8,7 @@ get_header();
 <main>
   <section class="top">
     <div class="top__wrapper">
-      <h2 class="top__title">Profile</h2>
+      <h2 class="top__title"><?php the_title(); ?></h2>
       <div class="top__image">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" alt="プロフィール部分の画像">
       </div>
@@ -54,7 +54,7 @@ get_header();
 
 
   <section class="skill">
-    <h3 class="skill__title">Skill set</h3>
+    <h3 class="skill__title">Skill Set</h3>
     <div class="skill__wrapper">
     <div class="skill__item">
           <div class="skill__content">
@@ -62,8 +62,8 @@ get_header();
               <h4 class="skill__name">HTML</h4>
               <span class="skill__ratio">90%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar ninety"></div>
+            <div class="skill__bar ninety start_animation">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -77,8 +77,8 @@ get_header();
               <h4 class="skill__name">CSS</h4>
               <span class="skill__ratio">90%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar ninety"></div>
+            <div class="skill__bar ninety">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -92,8 +92,8 @@ get_header();
               <h4 class="skill__name">Sass</h4>
               <span class="skill__ratio">90%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar ninety"></div>
+            <div class="skill__bar ninety">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -107,8 +107,8 @@ get_header();
               <h4 class="skill__name">Bootstrap</h4>
               <span class="skill__ratio">90%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar ninety"></div>
+            <div class="skill__bar ninety">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -122,8 +122,8 @@ get_header();
               <h4 class="skill__name">jQuery</h4>
               <span class="skill__ratio">80%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar eighty"></div>
+            <div class="skill__bar eighty">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -137,8 +137,8 @@ get_header();
               <h4 class="skill__name">Wordpress</h4>
               <span class="skill__ratio">70%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar seventy"></div>
+            <div class="skill__bar seventy">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -152,8 +152,8 @@ get_header();
               <h4 class="skill__name">Adobe XD</h4>
               <span class="skill__ratio">70%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar seventy"></div>
+            <div class="skill__bar seventy">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">
@@ -167,8 +167,8 @@ get_header();
               <h4 class="skill__name">Git/GitHub</h4>
               <span class="skill__ratio">60%</span>
             </div>
-            <div class="skill__bar">
-              <div class="skill__statusbar sixty"></div>
+            <div class="skill__bar sixty">
+              <div class="skill__statusbar"></div>
             </div>
           </div>
           <div class="skill__icon">

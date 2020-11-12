@@ -1,0 +1,104 @@
+/**
+* @file _l-page-works-detail.scss
+**/
+
+.work-thumbnail{
+    margin-bottom: 80px;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  &__image-pc{
+    width: 40%;
+    height: 400px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__image-sp{
+    width: 40%;
+    height: 400px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.work-content{
+  margin-bottom: 120px;
+  &__wrapper{
+    
+  }
+  &__title{
+    margin-bottom: 24px;
+    font-size: 6.4rem;
+    text-align: center;
+  }
+
+  &__text{
+    width: 60%;
+    margin: 0 auto; 
+    font-size: 2.4rem;
+    text-align: justify;
+
+    p{
+      overflow: auto;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    // the_content();は自動でpタグが挿入される。
+
+  }
+}
+
+.work-full{
+  margin-bottom: 120px;
+  &__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  &__image-left{
+    width: 40%;
+    height: auto;
+    border: 1px solid #0e0e0e;
+    overflow: hidden;
+    
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: top;
+    }
+  }
+
+  &__image-right{
+    width: 40%;
+    height: auto;
+    border: 1px solid #0e0e0e;
+    overflow: hidden;
+
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+
+.back{
+  
+}

@@ -11,7 +11,7 @@
     
     <section class="profile fade-in-bottom">
         <div class="profile__wrapper">
-            <div class="profile__inner">
+            <div class="profile__inner inner">
                 <div class="profile__content">
                     <h2>Profile</h2>
                     <h3>Who am I ...</h3>
@@ -27,7 +27,7 @@
     
     <section class="works fade-in-bottom">
         <div class="works__wrapper">
-            <div class="works__inner">
+            <div class="works__inner inner">
                 <div class="works__content">
                     <h2>Works</h2>
                     <h3>What Can I Do…</h3>
@@ -46,7 +46,7 @@
     
     <section class="contact fade-in-bottom">
         <div class="contact__wrapper">
-            <div class="contact__inner">
+            <div class="contact__inner inner">
                 <div class="contact__content">
                     <h2>Contact</h2>
                     <h3>Can I be Connected…</h3>

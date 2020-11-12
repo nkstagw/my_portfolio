@@ -7,7 +7,7 @@ get_header();
 
 <main>
   <section class="top">
-    <div class="top__wrapper">
+    <div class="top__wrapper inner">
       <h2 class="top__title"><?php the_title(); ?></h2>
       <div class="top__image">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" alt="プロフィール部分の画像">
@@ -17,7 +17,7 @@ get_header();
 
 
   <section class="introduce">
-    <div class="introduce__wrapper">
+    <div class="introduce__wrapper inner">
       <div class="introduce__content">
         <span class="name-ja">中川　翔太</span>
         <span class="name-en">Nakagawa Shota</span>
@@ -55,7 +55,7 @@ get_header();
 
   <section class="skill">
     <h3 class="skill__title">Skill Set</h3>
-    <div class="skill__wrapper">
+    <div class="skill__wrapper inner">
     <div class="skill__item">
           <div class="skill__content">
             <div class="skill__header">
@@ -181,7 +181,7 @@ get_header();
 
   <section class="service">
     <h3 class="service__title">Service</h3>
-    <div class="service__wrapper">
+    <div class="service__wrapper inner">
       <div class="service__card">
         <div class="service__image">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/code.jpg" alt="">

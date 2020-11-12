@@ -32,9 +32,12 @@
   <?php if ( is_page('works') ): ?>
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works.css" />
   <?php endif; ?>
-
-  <?php if ( is_page('works-detail') ): ?>
-  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works.css" />
+  <?php 
+    $parent_id = $post->post_parent; 
+    $parent_slug = get_post($parent_id)->post_name; 
+  ?>
+  <?php if ( $parent_slug == "works-detail"): ?>
+  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works-detail.css" />
   <?php endif; ?>
 
   <?php if ( is_page('contact') ): ?>

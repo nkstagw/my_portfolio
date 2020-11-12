@@ -7,7 +7,7 @@ get_header();
 
 <main>
   <section class="top">
-    <div class="top__wrapper">
+    <div class="top__wrapper inner">
       <h2 class="top__title"><?php the_title(); ?></h2>
       <div class="top__image">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" alt="プロフィール部分の画像">
@@ -16,7 +16,7 @@ get_header();
   </section>
 
   <section class="main-works">
-    <div class="main-works__wrapper">
+    <div class="main-works__wrapper inner">
 
       <div class="main-works__card">
         <a href="http://localhost:8000/works/frog-school/" class="main-works__image">

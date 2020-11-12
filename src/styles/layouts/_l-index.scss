@@ -42,12 +42,10 @@ main{
     }
   }
 
-  [class$="__inner"]{
+  [class*="__inner"]{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto; 
   }
 
   [class$="__content"]{

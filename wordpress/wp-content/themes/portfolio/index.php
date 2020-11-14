@@ -4,8 +4,8 @@
     <section class="first-view">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/first-view.jpg" alt="">
         <div class="first-view__title">
-            <h2 class="first-view__title-first">shota's</h2>
-            <h2 class="first-view__title-second">portfolio</h2>
+            <h2 class="first-view__title-first">N's house</h2>
+            <h2 class="first-view__title-second">- Shota's portfolio -</h2>
         </div>
     </section>
     

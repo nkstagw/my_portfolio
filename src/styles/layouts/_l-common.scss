@@ -50,6 +50,10 @@ a {
 .inner{
   width: 80%;
   margin: 0 auto; 
+
+  @include MEDIA_SP {
+    width: 90%;
+  }
 }
 
 // profile works contactのtop部分

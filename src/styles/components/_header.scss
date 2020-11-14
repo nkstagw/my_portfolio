@@ -17,10 +17,11 @@
 
     .header-title{
       font-size: 6rem;
+      font-weight: normal;
       @include MEDIA_TAB {
         font-size: 4rem;
       }
-      font-weight: normal;
+      
       a{
       color: $TEXT_COLOR_HEADER;
       }
@@ -83,14 +84,15 @@ nav.menu-container-pc {
     .menu-item {
       display: block;
       height: calc(100vh / 4 - 50px);
-      @include MEDIA_SP {
-        height: calc(100vh / 4 - 50px);
-      }
       padding: 20px 0;
       text-align: center;
       border-bottom: 1px solid #e0e0e0;
       background-color: #0e0e0e;
       opacity: 0.8;
+      @include MEDIA_SP {
+        height: calc(100vh / 4 - 50px);
+      }
+
       a {
         position: relative;
         display: block;

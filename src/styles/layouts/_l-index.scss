@@ -38,7 +38,10 @@ main{
     background-size: cover;
     background-position:center;
     @include MEDIA_TAB {
-      height: 1200px;
+      height: 1000px;
+    }
+    @include MEDIA_SP {
+      height: 800px;
     }
   }
 
@@ -56,6 +59,12 @@ main{
     color: $TEXT_COLOR_CONTENT;
     @include MEDIA_TAB {
       width: 100%;
+      height: 450px;
+      padding-top: 40px;
+    }
+    @include MEDIA_SP{
+      height: 350px;
+      padding-top: 20px;
     }
     
     h2{
@@ -63,6 +72,13 @@ main{
       font-weight: normal;
       text-align: center;
       margin-bottom: 80px;
+      @include MEDIA_TAB {
+        margin-bottom: 40px;
+      }
+      @include MEDIA_SP{
+        margin-bottom: 24px;
+        font-size: 6rem;
+      }
 
       &::first-letter{
         color: $ATTENTION;
@@ -73,11 +89,20 @@ main{
       font-size: 6rem;
       font-weight: normal;
       padding-left: 40px;
-
+      @include MEDIA_SP{
+        padding-left: 0;
+        font-size: 4rem;
+        text-align: center;
+      }
     }
     p{
       font-size: 3.2rem;
       padding-left: 80px;
+      @include MEDIA_SP{
+        padding-left: 0;
+        font-size: 2rem;
+        text-align: center;
+      }
     }
     a{
       position: absolute;
@@ -94,6 +119,11 @@ main{
       text-align: center;
       transition: 0.5s;
       box-shadow: 5px 5px 10px #0e0e0e;
+      @include MEDIA_SP{
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
       &:hover{
         color: $TEXT_COLOR_CONTENT ;
@@ -112,6 +142,10 @@ main{
     @include MEDIA_TAB {
       width: 80%;
       height: 400px;
+    }
+    @include MEDIA_SP{
+      width: 100%;
+      height: 300px;
     }
 
     img{
@@ -141,16 +175,22 @@ main{
       height: 100%;
       object-fit: cover;
       object-position: 0 40%;
+      @include MEDIA_TAB {
+        object-position: 50%;
+      }
     }
 
     &__title{
       position: relative;
-      top: -70vh;
+      top: -60vh;
       left: 15vw;
       color: $TEXT_COLOR_CONTENT;
-      font-size: 8rem;
       font-weight: normal;
-      width: 600px;
+      width: 650px;
+      @include MEDIA_SP{
+        left: 5vw;
+        width: 320px;
+      }
 
       &::before{
         content: "";
@@ -164,16 +204,28 @@ main{
         background: #000;        
       }
       &-first{
+        font-size: 8rem;
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        @include MEDIA_SP{
+          font-size: 5rem;
+        }
+
+        &::first-letter{
+          color: $ATTENTION;
+        }
       }
       &-second{
+        font-size: 6rem;
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        @include MEDIA_SP{
+          font-size: 3rem;
+        }
       }
     }
 
@@ -191,7 +243,10 @@ main{
   // profile
   .profile{
     margin-bottom: 120px;
-    padding-top: 100vh;
+    padding-top: 100vh;    
+    @include MEDIA_SP {
+      margin-bottom: 80px;
+    }
 
     &__content{
       order: 2;
@@ -205,10 +260,14 @@ main{
   // works
   .works{
     margin-bottom: 120px;
+    @include MEDIA_SP {
+      margin-bottom: 80px;
+    }
 
     &__content{
       margin-right: 20px;
       @include MEDIA_TAB {
+        margin-right: 0;
         order: 2;
       }
     }
@@ -240,6 +299,9 @@ main{
   // contact
   .contact{
     margin-bottom: 160px;
+    @include MEDIA_SP{
+      margin-bottom: 120px;
+    }
 
     &__wrapper{
 
@@ -250,6 +312,9 @@ main{
     }
     h3{
       font-size: 5.5rem;
+      @include MEDIA_SP{
+        font-size: 3.2rem;
+      }
     }
     &__image{
       order: 1;

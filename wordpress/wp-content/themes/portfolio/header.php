@@ -103,18 +103,38 @@
 
     <nav class="menu-container-sp">
         <ul class="menu-sp">
-            <li class="menu-item">
-                <a href="#">Home</a>
-            </li>
-            <li class="menu-item">
-                <a href="#">Profile</a>
-            </li>
-            <li class="menu-item">
-                <a href="#">Works</a>
-            </li>
-            <li class="menu-item">
-                <a href="#">Contact</a>
-            </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000">
+              <div class="menu-item__container">
+                <span>Home</span>
+                <span>ホーム</span>
+              </div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000/profile/">
+              <div class="menu-item__container">
+                <span>Profile</span>
+                <span>プロフィール</span>
+              </div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000/works/">
+              <div class="menu-item__container">  
+                <span>Works</span>
+                <span>実績</span>
+              </div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="http://localhost:8000/contact/">
+              <div class="menu-item__container">
+                <span>Contact</span>
+                <span>お問い合わせ</span>
+              </div>
+            </a>
+          </li>
         </ul>
     </nav>
 

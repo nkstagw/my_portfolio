@@ -27,12 +27,18 @@
       display: inline-block;
       padding-left: 57px;
       margin-bottom: 40px;
-      font-size: 1.6rem;
+      font-size: 2.4rem;
       color: #fefefe;
 
       a{
         color: #fefefe;
+        
+        &:hover{
+          color:$ATTENTION;
+          transition: 0.5s all;
+        }
       }
+      
     }
   }
 
@@ -52,6 +58,11 @@
         a {
           font-size: 1.6rem;
           color: #fefefe;
+          
+          &:hover{
+            color:$ATTENTION;
+            transition: 0.5s all;
+          }
           span{
             display: block;
           }

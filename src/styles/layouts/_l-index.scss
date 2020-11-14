@@ -65,7 +65,7 @@ main{
       margin-bottom: 80px;
 
       &::first-letter{
-        color: #7c0000;
+        color: $ATTENTION;
       }
     }
 
@@ -93,11 +93,13 @@ main{
       font-size: 4rem;
       text-align: center;
       transition: 0.5s;
+      box-shadow: 5px 5px 10px #0e0e0e;
 
       &:hover{
         color: $TEXT_COLOR_CONTENT ;
         background-color:  #707070;
         transition: 0.5s;
+        box-shadow: none;
       }
     }
   }
@@ -175,14 +177,14 @@ main{
       }
     }
 
-    &.move .first-view__title::before{
+    & .first-view__title::before{
       animation: passing-bar 4s ease .5s 1 normal forwards;
     }
 
-    &.move .first-view__title-first{
+    & .first-view__title-first{
       animation: passing-txt 5s ease .5s 1 normal forwards;
     }
-    &.move .first-view__title-second{
+    & .first-view__title-second{
       animation: passing-txt 6s ease .5s 1 normal forwards;
     }
   }
@@ -246,82 +248,12 @@ main{
     &__content{
       order: 2;
     }
-
+    h3{
+      font-size: 5.5rem;
+    }
     &__image{
       order: 1;
     }
   }
 }
 
-
-
-
-
-
-#main_cover {
-    h2 {
-      position: relative;
-      color: #000;
-      font-size: 5.2rem;
-      font-weight: 300;
-      padding-top: 220px;
-      padding-left: 100px;
-      letter-spacing: 10px;
-      
-      span {
-        display: block;
-        margin-left: 250px;
-        margin-top: 56px;
-      }
-    }
-  
-
-  .point1 {
-    background-color: $MAIN_GREEN;
-    padding: 50px 0;
-
-    .point1-container {
-      max-width: 1330px;
-      padding: 0 15px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      @include MEDIA_SP {
-        flex-direction: column;
-      }
-    }
-
-    .point-text-wrapper {
-      max-width: 660px;
-      width: 50%;
-      background-color: #fff;
-      padding: 3.8%;
-      margin-right: 7.7%;
-      @include MEDIA_SP {
-        width: 100%;
-        margin-right: initial;
-      }
-
-      h3 {
-        font-size: 2.4rem;
-        margin-bottom: 30px;
-      }
-      h4 {
-        font-size: 2rem;
-        margin-bottom: 25px;
-      }
-      p {
-        margin-bottom: 25px;
-      }
-    }
-
-    img {
-      width: 42%;
-      @include MEDIA_SP {
-          max-width: 550px;
-          width: 100%;
-          margin-top: 30px;
-      }
-    }
-  }
-}

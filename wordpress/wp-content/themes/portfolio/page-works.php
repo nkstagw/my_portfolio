@@ -48,11 +48,11 @@ get_header();
   <section class="sub-works">
     <div class="sub-works__slider">
       <ul class="slider">
-        <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/airbnb.jpg" alt=""></a></li>
-        <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ninjacode.jpg" alt=""></a></li>
-        <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/Airbnb1.jpg" alt=""></a></li>
-        <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/corporate.jpg" alt=""></a></li>
-        <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/task1.jpg" alt=""></a></li>
+        <li><a href="http://localhost:8000/works-detail/airbnb2/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/airbnb2.jpg" alt=""></a></li>
+        <li><a href="http://localhost:8000/works-detail/ninja-code/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/ninjacode.jpg" alt=""></a></li>
+        <li><a href="http://localhost:8000/works-detail/airbnb1/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/airbnb1.jpg" alt=""></a></li>
+        <li><a href="http://localhost:8000/works-detail/corporate-site/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/corporate.jpg" alt=""></a></li>
+        <li><a href="http://localhost:8000/works-detail/task1/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/task1.jpg" alt=""></a></li>
         <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" alt=""></a></li>
         <li><a href=""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" alt=""></a></li>
 

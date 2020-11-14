@@ -88,6 +88,28 @@
     }
   }
 }
+// slick sliderでの専用CSS(phpファイルに記載なし。)
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+
+.prev-arrow {
+  left: -20px;
+}
+
+.next-arrow {
+  right: -20px;
+}
 .slick-slide{
   margin: 0 20px;
 }

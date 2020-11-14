@@ -8,10 +8,7 @@ get_header();
 <section class="work-thumbnail">
   <div class="work-thumbnail__wrapper inner">
     <div class="work-thumbnail__image-pc">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc-thumbnail-<?php echo attribute_escape($post->post_name);?>.jpg" alt="">
-    </div>
-    <div class="work-thumbnail__image-sp">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/sp-thumbnail-<?php echo attribute_escape($post->post_name);?>.jpg" alt="">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/<?php echo attribute_escape($post->post_name);?>/thumbnail.jpg" alt="">
     </div>
   </div>
 </section>
@@ -26,16 +23,16 @@ get_header();
 <section class="work-full">
   <div class="work-full__wrapper inner">
     <div class="work-full__image-left">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc-full-left-<?php echo attribute_escape( $post->post_name);?>.jpg" alt="">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/<?php echo attribute_escape( $post->post_name);?>/pc-full-left.jpg" alt="">
     </div>
     <div class="work-full__image-right">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc-full-right-<?php echo attribute_escape( $post->post_name);?>.jpg" alt="">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/<?php echo attribute_escape( $post->post_name);?>/pc-full-right.jpg" alt="">
     </div>
   </div>
 </section>
 
 <section class="back">
-  <a  class="back__btn" href="http://localhost:8000/works/"><span>Back</spa></a>
+  <a  class="back__btn" href="http://localhost:8000/works/"><span>Back</span></a>
 </section>
 
 <?php get_footer(); ?>

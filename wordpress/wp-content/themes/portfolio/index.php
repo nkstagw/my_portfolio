@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-    <section class="first-view move">
+    <section class="first-view">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/first-view.jpg" alt="">
         <div class="first-view__title">
             <h2 class="first-view__title-first">shota's</h2>
@@ -15,7 +15,7 @@
                 <div class="profile__content">
                     <h2>Profile</h2>
                     <h3>Who am I ...</h3>
-                    <p>Web Creator… Web Designer… etc…..</p>
+                    <p>Web Creator&Designer… etc…..</p>
                     <a href="">And more</a>
                 </div>
                 <a href="#" class="profile__image">
@@ -61,26 +61,4 @@
     </section>
 </main>
 
-
-<!-- 以下は元のコード。一応残しておく -->
-<!-- <div id="main_cover">
-    <div class="first-view">
-        <h2>いらないものを省いて<span>かしこい結婚式</span></h2>
-    </div>
-
-    <div class="point1">
-        <div class="point1-container">
-            <div class="point-text-wrapper">
-                <h3>予算内で人気のゲストハウスから一流ホテルまで選べる</h3>
-                <h4>理想の式場でリーズナブルな結婚式を</h4>
-                <p>ホテルやゲストハウスは高い費用のイメージがあるかと思いますが、「高いから…」と諦めず、まずはTHE KYOTO-KONへ相談！
-                    THE KYOTO-KONのオリジナルプランはリーズナブルな価格で夢の会場での結婚式が叶います。</p>
-                <h4>内容が充実したオリジナルプラン</h4>
-                <p>価格だけではなく内容にも満足できるプラン。プラン外の追加で予算を遥に超えた…！なんて心配もいりません。費用の心配はせず、安心して当日を迎えましょう。</p>
-            </div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/point1.png" alt="" class="fade-in-bottom">
-
-        </div>
-    </div>
-</div> -->
 <?php get_footer();

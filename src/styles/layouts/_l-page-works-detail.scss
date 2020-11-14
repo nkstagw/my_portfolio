@@ -6,30 +6,18 @@
     margin-bottom: 80px;
 
   &__wrapper{
-    display: flex;
-    justify-content: space-evenly;
 
   }
 
   &__image-pc{
-    width: 40%;
-    height: 400px;
+    width: 70%;
+    height: 640px;
+    margin: 0 auto; 
 
     img{
       width: 100%;
       height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__image-sp{
-    width: 40%;
-    height: 400px;
-
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
@@ -72,8 +60,6 @@
     width: 40%;
     height: auto;
     border: 1px solid #0e0e0e;
-    overflow: hidden;
-    
 
     img{
       width: 100%;
@@ -87,18 +73,33 @@
     width: 40%;
     height: auto;
     border: 1px solid #0e0e0e;
-    overflow: hidden;
-
 
     img{
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: top;
     }
   }
 }
 
 .back{
-  
+  margin-bottom: 160px;
+  text-align: center;
+
+  &__btn{
+    position: relative;
+    font-size: 3.2rem;
+
+    &::before{
+      content: "◀︎";
+      position: absolute;
+      top: 50%;
+      left: -3.2rem;
+      transform: translateY(-50%);
+      font-size: 2.4rem;
+
+    }
+
+  }
 }

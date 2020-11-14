@@ -32,11 +32,12 @@ $(function () {
   //スライダー//
 	$('.slider').slick({
     autoplay:true,
-    autoplaySpeed:4000,
-		speed:8000,
+    autoplaySpeed:8000,
+		speed:3000,
 		easing:'swing',
     slidesToShow:4,
-    arrows:false,
+    prevArrow:'<span class="prev-arrow">&lt;</span>',
+		nextArrow:'<span class="next-arrow">&gt;</span>',
 		responsive:[
       {
 				breakpoint:999,

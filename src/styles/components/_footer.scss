@@ -5,29 +5,54 @@
 .footer {
   width: 100%;
   height: 200px;
+  @include MEDIA_SP{
+    height: 240px;;
+  }
   padding: 20px 0;
   background-color: #4D4D4D;
 
   &__wrapper{
     display: flex;
     justify-content: center;
+    @include MEDIA_SP{
+      justify-content: initial;
+      flex-direction: column;
+    }
+
     margin: 0 auto; 
   }
 
   &__title{
     padding: 40px 0;
     margin-right: 120px;
+    @include MEDIA_SP{
+      width: 100%;
+      margin-right: 0;
+    }
     font-size: 4rem;
     color: #fefefe;
     text-align: center;
   }
   &__content{
     margin-bottom: 40px;
+    @include MEDIA_SP{
+      width: 100%;
+      margin-bottom: 0;
+    }
     .twitter{
       display: inline-block;
       padding-left: 57px;
       margin-bottom: 40px;
       font-size: 2.4rem;
+      @include MEDIA_SP{
+        display: block;
+        width: 80%;
+        margin: 0 auto; 
+        margin-bottom: 24px;
+        padding-left: 0;
+        text-align: center;
+        font-size: 1.6rem;
+      }
       color: #fefefe;
 
       a{
@@ -43,6 +68,9 @@
   }
 
   &__nav{
+    @include MEDIA_SP{
+      display: none;
+    }
     .menu{
       display: flex;
       justify-content: space-between;

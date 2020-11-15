@@ -21,7 +21,7 @@
       @include MEDIA_TAB {
         font-size: 4rem;
       }
-      
+
       a{
       color: $TEXT_COLOR_HEADER;
       }
@@ -172,6 +172,12 @@ nav.menu-container-pc {
 @mixin underLayer {
   background-color: #4D4D4D;
   margin-bottom: 160px;
+  @include MEDIA_TAB {
+    margin-bottom: 80px;
+  }
+  @include MEDIA_TAB {
+    margin-bottom: 40px;
+  }
 }
 .header{
   &.profile{

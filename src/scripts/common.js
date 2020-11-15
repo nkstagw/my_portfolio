@@ -40,16 +40,18 @@ $(function () {
 		nextArrow:'<span class="next-arrow">&gt;</span>',
 		responsive:[
       {
-				breakpoint:999,
+				breakpoint:1025,
 				settings:{
-					slidesToShow:4,
+					slidesToShow:3,
 				}
 			},
 			{
-				breakpoint:768,
+				breakpoint:769,
 				settings:{
-					slidesToShow:5,
-					slidesToScroll:1,
+          slidesToShow:2,
+          autoplaySpeed:2000,
+          prevArrow:'',
+		      nextArrow:'',
 				}
 			}
 		]

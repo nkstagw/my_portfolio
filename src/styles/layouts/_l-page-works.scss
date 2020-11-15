@@ -9,6 +9,9 @@
   &__title{
     order: 1;
     margin-right: 120px;
+    @include MEDIA_TAB {
+      margin-right: 0;
+    }
   }
   &__image{
     order: 2;
@@ -18,6 +21,9 @@
 // main-works
 .main-works{
   margin-bottom: 120px;
+  @include MEDIA_TAB {
+    margin-bottom: 80px;
+  }
 
   &__wrapper{
     display: flex;
@@ -29,6 +35,10 @@
   &__card{
     width: calc(100% / 2 - 40px);
     height: 100%;
+    @include MEDIA_SP {
+      width: 100% ;
+      margin-bottom: 24px;
+    }
   }
   &__image{
     display: block;
@@ -36,11 +46,18 @@
     height: 450px;
     margin-bottom: 40px;
     border: 1px solid #0e0e0e;
+    @include MEDIA_TAB {
+      height: 300px;
+    }
+    @include MEDIA_SP {
+      height: 250px;
+    }
 
     img{
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: top;
     }
   }
   &__title{
@@ -48,30 +65,63 @@
     text-align: center;
     font-weight: normal;
     font-size: 4rem;
+    @include MEDIA_TAB {
+      font-size: 3rem;
+    }
+    @include MEDIA_TAB {
+      font-size: 2rem;
+    }
 
   }
   &__content{
     text-align: justify;
     font-size: 2rem;
+    @include MEDIA_TAB {
+      font-size: 1.6rem;
+    }
+    @include MEDIA_TAB {
+      font-size: 1.2rem;
+    }
   }
-  .hr{
-    display: inline-block;
-    margin-bottom: 8px;
+
+  &__text{
+    display: block;
+    margin-bottom: 24px;
+    @include MEDIA_TAB {
+      margin-bottom: 16px;
+    }
   }
 }
 
 // sub-works
 .sub-works{
   margin-bottom: 160px;
+  @include MEDIA_TAB {
+    margin-bottom: 120px;
+  }
+  @include MEDIA_SP {
+    margin-bottom: 80px;
+  }
+  &__title{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 3.2rem;
+  }
   &__slider{
-      width: calc(80% + 40px);
-      margin: 0 auto; 
+      width: calc(90% + 40px);
+      margin: 0 auto;
+      @include MEDIA_SP {
+        width: 100%;
+      } 
   }
 
   .slider{
 
     li{
       height: 240px;
+      @include MEDIA_SP {
+        height: 160px;
+      }
       
       a{
         display: block;
@@ -112,4 +162,7 @@
 }
 .slick-slide{
   margin: 0 20px;
+  @include MEDIA_SP {
+    margin: 0 16px;
+  } 
 }

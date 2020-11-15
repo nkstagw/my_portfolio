@@ -4,15 +4,20 @@
 
 .work-thumbnail{
     margin-bottom: 80px;
-
-  &__wrapper{
-
-  }
+    @include MEDIA_TAB{
+      margin-bottom: 40px;
+    } 
+    @include MEDIA_SP{
+      margin-bottom: 20px;
+    }
 
   &__image-pc{
     width: 70%;
     height: 640px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    @include MEDIA_SP{
+      height: 320px;
+    } 
 
     img{
       width: 100%;
@@ -24,13 +29,19 @@
 
 .work-content{
   margin-bottom: 120px;
-  &__wrapper{
-    
+  @include MEDIA_TAB{
+    margin-bottom: 80px;
   }
+  @include MEDIA_SP{
+    margin-bottom: 40px;
+  } 
   &__title{
     margin-bottom: 24px;
     font-size: 6.4rem;
     text-align: center;
+    @include MEDIA_SP{
+      font-size: 4rem;
+    }
   }
 
   &__text{
@@ -38,9 +49,14 @@
     margin: 0 auto; 
     font-size: 2.4rem;
     text-align: justify;
+    @include MEDIA_TAB{
+      width: 100%;
+    }
+    @include MEDIA_SP{
+      font-size: 1.6rem;
+    }  
 
     p{
-      overflow: auto;
       text-align: justify;
       margin-bottom: 30px;
     }
@@ -54,26 +70,21 @@
   &__wrapper{
     display: flex;
     justify-content: space-evenly;
+    @include MEDIA_SP{
+      justify-content: space-between;
+    } 
   }
   
-  &__image-left{
+  &__image-left,&__image-right{
     width: 40%;
     height: auto;
-    border: 1px solid #0e0e0e;
-
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: top;
-    }
-  }
-
-  &__image-right{
-    width: 40%;
-    height: auto;
-    border: 1px solid #0e0e0e;
-
+    @include MEDIA_TAB{
+      width: 45%;
+    } 
+    @include MEDIA_SP{
+      width: calc(50% - 8px);
+    } 
+    
     img{
       width: 100%;
       height: 100%;
@@ -86,6 +97,9 @@
 .back{
   margin-bottom: 160px;
   text-align: center;
+  @include MEDIA_TAB{
+    margin-bottom: 80px;
+  } 
 
   &__btn{
     position: relative;

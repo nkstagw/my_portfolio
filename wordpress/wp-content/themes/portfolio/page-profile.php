@@ -38,14 +38,16 @@ get_header();
             <span>岡山大学　大学院　自然科学研究科　卒業</span>
           </li>
           <li>
-            <span class="date">2017年4月〜現在</span>
-            <span>機械設計者として筐体や駆動系の設計業務に従事<br class="br-pc">
-                  またPCを使った活動としてWEB製作を中心に活動中
-            </span>
+            <span class="date">2017年4月</span>
+            <span>機械設計者として筐体や駆動系の設計業務に従事</span>
+          </li>
+          <li>
+            <span class="date">2020年3月〜</span>
+            <span>WEBサイトやLP作成などのWEB製作を中心に活動中</span>
           </li>
         </ul>
-      
       </div>
+
       <div class="introduce__image">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile-image.jpg" alt="">
       </div>
@@ -209,7 +211,7 @@ get_header();
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/wordpress.jpg" alt="">
         </div>
         <div class="service__content">
-          <h4>WORDPRESS</h4>
+          <h4 class="text-sp">WORDPRESS</h4>
           <span>ワードプレス</span>
           <p>お知らせやイベント情報など更新が必要なサイトは「WordPress」で実装いたします。コストやスピード感を求められる方は既存テーマのカスタマイズ、しっかり作り込みたい方はテーマ作成などお客様のご要望に合わせた作成を行います。</p>
         </div>

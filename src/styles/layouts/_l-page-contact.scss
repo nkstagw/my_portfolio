@@ -6,9 +6,15 @@
 // top
 .top{
   margin-bottom: 160px;
+  @include MEDIA_TAB{
+    margin-bottom: 120px;
+  }
   &__title{
     order: 2;
     font-size: 14rem;
+    @include MEDIA_SP{
+      font-size: 6rem;
+    }
   }
   &__image{
     order: 1;
@@ -17,10 +23,22 @@
 
 .contact{
   margin-bottom: 160px;
+  @include MEDIA_TAB{
+    margin-bottom: 120px;
+  }
+  @include MEDIA_SP{
+    margin-bottom: 80px;
+  }
 
   &__wrapper{
     width: 30%;
-    margin: 0 auto; 
+    margin: 0 auto;
+    @include MEDIA_TAB{
+      width: 60%;
+    }
+    @include MEDIA_SP{
+      width: 90%;
+    }  
   }
   &__title{
     margin-bottom: 40px;
@@ -30,6 +48,9 @@
   h3{
     font-size: 2.4rem;
     margin-bottom: 20px;
+    @include MEDIA_SP{
+      font-size: 2rem;
+    }  
   }
 
   &__twitter{
@@ -40,7 +61,7 @@
   }
   &__twitterbtn{
     display: block;
-    width: 400px;
+    width: 70%;
     height: 60px;
     line-height: 60px;
     margin: 0 auto; 

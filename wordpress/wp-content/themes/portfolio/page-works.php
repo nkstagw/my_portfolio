@@ -24,9 +24,9 @@ get_header();
         </a>
         <h3 class="main-works__title">Frog School 【模写】</h3>
         <p class="main-works__content">
-          <span class="hr">トップページのサイト模写になります。ファーストビュー部分の動画の挿入やインタビュー音声なども実装しております。またお問い合わせ部分も実際に機能しており、実装には「formrun」というアプリケーションを使用しております。</span><br class="br-pc">
-          <span class="hr">製作日数：5日</span><br class="br-pc">
-          使用スキル:HTML/CSS(Sass)/Bootstrap
+          <span class="main-works__text">トップページのサイト模写になります。ファーストビュー部分の動画の挿入やインタビュー音声なども実装しております。またお問い合わせ部分も実際に機能しており、実装には「formrun」というアプリケーションを使用しております。</span>
+          <span class="main-works__text">製作日数：5日</span>
+          <span class="main-works__text">使用スキル:HTML/CSS(Sass)/Bootstrap</span>
         </p>
       </div>
 
@@ -36,9 +36,9 @@ get_header();
         </a>
         <h3 class="main-works__title">お試しNOW ROOM【模写】</h3>
         <p class="main-works__content">
-          <span class="hr">トップページのサイト模写になります。ファーストビュー部分の動画の挿入やYoutubeやTwitterのリンク挿入も行っています。またアコーディオンやハンバーガーメニューなどの動的パーツも実装しております。</span><br class="br-pc">
-          <span class="hr">製作日数：3日</span><br class="br-pc">
-          使用スキル:HTML/CSS(Sass)/JavaScript(jQuery)
+          <span class="main-works__text">トップページのサイト模写になります。ファーストビュー部分の動画の挿入やYoutubeやTwitterのリンク挿入も行っています。またアコーディオンやハンバーガーメニューなどの動的パーツも実装しております。</span>
+          <span class="main-works__text">製作日数：3日</span>
+          <span class="main-works__text">使用スキル:HTML/CSS(Sass)/JavaScript(jQuery)</span>
         </p>
       </div>
 
@@ -46,6 +46,7 @@ get_header();
   </section>
 
   <section class="sub-works">
+    <h2 class="sub-works__title">その他の実績</h2>
     <div class="sub-works__slider">
       <ul class="slider">
         <li><a href="http://localhost:8000/works-detail/airbnb2/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/airbnb2.jpg" alt=""></a></li>

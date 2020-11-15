@@ -136,7 +136,7 @@ get_header();
       <div class="skill__item">
           <div class="skill__content">
             <div class="skill__header">
-              <h4 class="skill__name">Wordpress</h4>
+              <h4 class="skill__name">WordPress</h4>
               <span class="skill__ratio">70%</span>
             </div>
             <div class="skill__bar seventy">

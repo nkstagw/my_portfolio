@@ -73,6 +73,17 @@ $(function () {
   });
 });
 
+  //ページtopに戻るボタン&ヘッダーのメニュー隠す
+$(window).on("scroll",function () {
+  
+  if($(window).scrollTop() > 300){
+      $('.top-btn').addClass('is-over');
+  }
+  else{
+      $('.top-btn').removeClass('is-over');
+  }
+});
+
 // スクロールされて表示されたらanimationを動かす
 $(function () {
   $(window).scroll(function () {

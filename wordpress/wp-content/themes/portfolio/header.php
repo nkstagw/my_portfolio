@@ -59,6 +59,7 @@
     echo $parent_slug;
   ?>
   <?php echo attribute_escape( $post->post_name);?>"
+  
   >
     <div class="header__wrapper">
       <h1 class="header-title">

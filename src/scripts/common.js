@@ -86,3 +86,11 @@ $(function () {
     });
   });
 });
+
+//ローディング
+$(window).on("load",function () {
+	
+	setTimeout(function () {
+		$('.loader').fadeOut();
+	}, 600)
+});

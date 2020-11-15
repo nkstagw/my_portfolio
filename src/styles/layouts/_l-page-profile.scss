@@ -55,9 +55,10 @@
     width: 66%;
     height: 600px;
     border: 1px solid #0e0e0e;
-    padding: 40px 0 0 40px;
+    padding: 24px 10px 0 24px;
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
     font-size: 2.4rem;
+    overflow: scroll;
     @include MEDIA_TAB{
       position: static;
       width: 100%;
@@ -106,17 +107,8 @@
     }
   }
   p{
-    padding-left: 80px;
-    margin-bottom: 40px;
-    @include MEDIA_TAB{
-      padding-left: 40px;
-    }
-    @include MEDIA_SP{
-      padding-left: 0;
-    }
-  }
-  .career{
     padding-left: 40px;
+    margin-bottom: 40px;
     @include MEDIA_TAB{
       padding-left: 20px;
     }
@@ -124,10 +116,16 @@
       padding-left: 0;
     }
   }
-  ul{
-    padding-left: 80px;
+  .career{
+    padding-left: 20px;
     @include MEDIA_TAB{
-      padding-left: 40px;
+      padding-left: 0;
+    }
+  }
+  ul{
+    padding-left: 40px;
+    @include MEDIA_TAB{
+      padding-left: 20px;
     }
     @include MEDIA_SP{
       padding-left: 0;

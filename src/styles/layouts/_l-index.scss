@@ -53,7 +53,7 @@ main{
 
   [class$="__content"]{
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 600px;
     padding-top: 80px;
     color: $TEXT_COLOR_CONTENT;
@@ -269,10 +269,12 @@ main{
     }
 
     &__content{
-      margin-right: 20px;
       @include MEDIA_TAB {
-        margin-right: 0;
         order: 2;
+      }
+
+      a{
+        right: 10px;
       }
     }
 

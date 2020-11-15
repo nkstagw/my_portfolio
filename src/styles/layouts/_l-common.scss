@@ -48,11 +48,11 @@ a {
 }
 
 .inner{
-  width: 80%;
+  width: 90%;
   margin: 0 auto; 
 
   @include MEDIA_TAB {
-    width: 90%;
+    width: 95%;
   }
 }
 

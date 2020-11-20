@@ -13,6 +13,10 @@
   <!-- font awesome CSS -->
   <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
 
+  <!-- font CDN -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
   <!-- slick CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">

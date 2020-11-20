@@ -32,8 +32,8 @@ $(function () {
   //スライダー//
 	$('.slider').slick({
     autoplay:true,
-    autoplaySpeed:8000,
-		speed:3000,
+    autoplaySpeed:4000,
+		speed:1000,
 		easing:'swing',
     slidesToShow:4,
     prevArrow:'<span class="prev-arrow">&lt;</span>',
@@ -73,7 +73,7 @@ $(function () {
   });
 });
 
-  //ページtopに戻るボタン&ヘッダーのメニュー隠す
+  //ページtopに戻るボタン
 $(window).on("scroll",function () {
   
   if($(window).scrollTop() > 300){
@@ -83,6 +83,11 @@ $(window).on("scroll",function () {
       $('.top-btn').removeClass('is-over');
   }
 });
+$('.top-btn').click(function () {
+  $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+  return false;
+});
+
 
 // スクロールされて表示されたらanimationを動かす
 $(function () {

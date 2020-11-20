@@ -10,7 +10,7 @@ get_header();
     <div class="top__wrapper inner">
       <h2 class="top__title"><?php the_title(); ?></h2>
       <div class="top__image">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" alt="プロフィール部分の画像">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/code.jpg" alt="プロフィール部分の画像">
       </div>
     </div>
   </section>
@@ -21,6 +21,7 @@ get_header();
       <div class="main-works__card">
         <a href="https://nk-nshouse.com/works/portfolio/" class="main-works__image">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_image.jpg" alt="">
+          <div class="main-works__image-filter"><span>詳細はこちら</span></div>
         </a>
         <h3 class="main-works__title">ポートフォリオサイト</h3>
         <p class="main-works__content">
@@ -33,6 +34,7 @@ get_header();
       <div class="main-works__card">
         <a href="http://localhost:8000/works/now-room/" class="main-works__image">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nowroom_image.jpg" alt="">
+          <div class="main-works__image-filter"><span>詳細はこちら</span></div>
         </a>
         <h3 class="main-works__title">お試しNOW ROOM【模写】</h3>
         <p class="main-works__content">

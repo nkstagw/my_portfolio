@@ -119,6 +119,21 @@ get_header();
       </div>
 
       <div class="skill__item">
+        <div class="skill__content">
+          <div class="skill__header">
+            <h4 class="skill__name">JavaScript</h4>
+            <span class="skill__ratio">80%</span>
+          </div>
+          <div class="skill__bar eighty">
+            <div class="skill__statusbar"></div>
+          </div>
+        </div>
+        <div class="skill__icon">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/javascript_icon.svg" alt="">
+        </div>
+      </div>
+
+      <div class="skill__item">
           <div class="skill__content">
             <div class="skill__header">
               <h4 class="skill__name">jQuery</h4>
@@ -163,20 +178,6 @@ get_header();
           </div>
       </div>
 
-      <div class="skill__item">
-          <div class="skill__content">
-            <div class="skill__header">
-              <h4 class="skill__name">Git/GitHub</h4>
-              <span class="skill__ratio">60%</span>
-            </div>
-            <div class="skill__bar sixty">
-              <div class="skill__statusbar"></div>
-            </div>
-          </div>
-          <div class="skill__icon">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/github_icon.svg" alt="">
-          </div>
-      </div>
     </div>
   </section>
 
